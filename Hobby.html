@@ -2,32 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carol's Hobby</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="myscripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="myscripts.js" defer></script>
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Carol's Web</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="HTML.html">HTML</a></li>
+      <li><a href="Css.html">CSS</a></li>
+      <li><a href="JavaScript.html">JavaScript</a></li>
+      <li><a href="Hobby.html">Hobby</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Page Content -->
+  <h1>🧡 My Favorite Hobbies</h1>
+  <p class="paragraphAboutMe">
+    When I’m not coding or studying, these are the things that bring me joy:
+  </p>
 
-    <div>
-        <h1 class="fontSizeh1">XXXXXXXXr</h1>
+  <table>
+    <tr><th>Hobby</th><th>Why I Love It</th></tr>
+    <tr>
+      <td>🧟‍♀️ Watching Horror Movies</td>
+      <td>I love the suspense and thrill of horror — from creepy classics to psychological mind-benders!</td>
+    </tr>
+    <tr>
+      <td>🐕 Walking with My Dogs</td>
+      <td>It's my peaceful time — being outdoors with my dogs makes me feel calm and happy.</td>
+    </tr>
+    <tr>
+      <td>🍜 Enjoying Good Food</td>
+      <td>I like to try new dishes, especially spicy food and bubble tea! Food is love and comfort for me.</td>
+    </tr>
+  </table>
 
-        <nav>
+  <!-- Optional Gallery Section -->
+  <div class="gallery">
+    <img src="images/carolwithdogs.jpeg" alt="Me walking with my dog" />
+    <img src="images/horrormovies.avif" alt="Spooky movie moment" />
+    <img src="images/food.jpg" alt="Yummy dish I enjoyed" />
+  </div>
 
-            <ul style="list-style-type:none">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="Css.html">CSS</a></li>
-                <li><a href="JavaScript.html">JavaScript</a></li>
-                <li><a href="Hobby.html">Hobby</a></li>
-            </ul>
-
-        </nav>
-    </div>
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Carol Iantas. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

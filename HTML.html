@@ -4,137 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Cheat Sheet Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="myscripts.js"></script>
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js" defer></script>
 </head>
 
-<body class="cheatPage">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Carol's Web</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="Css.html">CSS</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="Hobby.html">Hobby</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Page Content -->
     <h1>HTML Cheat Sheet</h1>
+    <p class="paragraphAboutMe">This table lists 15 useful HTML elements and their purposes. Perfect for quick review!
+    </p>
 
-    <div>
-
-        <nav>
-
-            <ul style="list-style-type:none">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="Css.html">CSS</a></li>
-                <li><a href="JavaScript.html">JavaScript</a></li>
-                <li><a href="Hobby.html">Hobby</a></li>
-            </ul>
-
-        </nav>
-    </div>
-    
-    <p>This page includes useful HTML elements and a table for quick reference.</p>
-
-    <h2 class="cheatPageH2">HTML Elements Summary Table</h2>
-
-    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-    
     <table>
-
         <tr>
             <th>Element</th>
             <th>Purpose</th>
             <th>Example</th>
         </tr>
-
         <tr>
             <td>&lt;h1&gt; - &lt;h6&gt;</td>
-            <td>Headings (from largest to smallest)</td>
+            <td>Headings (largest to smallest)</td>
             <td>&lt;h1&gt;Title&lt;/h1&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;p&gt;</td>
             <td>Paragraph of text</td>
             <td>&lt;p&gt;Hello world!&lt;/p&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;a&gt;</td>
             <td>Hyperlink</td>
-            <td>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</td>
+            <td>&lt;a href=\"https://example.com\"&gt;Visit&lt;/a&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;img&gt;</td>
             <td>Image</td>
-            <td>&lt;img src="img.jpg" alt="Description"&gt;</td>
+            <td>&lt;img src=\"img.jpg\" alt=\"Description\"&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
-            <td>Lists (unordered, ordered, list items)</td>
+            <td>Lists</td>
             <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;table&gt;</td>
-            <td>Create a table</td>
+            <td>Table structure</td>
             <td>&lt;table&gt;&lt;/table&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</td>
-            <td>Table row, data cell, header cell</td>
+            <td>Table row, cell, header</td>
             <td>&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;form&gt;</td>
-            <td>Create a form</td>
-            <td>&lt;form action=""&gt;&lt;/form&gt;</td>
+            <td>Form container</td>
+            <td>&lt;form action=\"\"&gt;&lt;/form&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;input&gt;</td>
             <td>Form input field</td>
-            <td>&lt;input type="text"&gt;</td>
+            <td>&lt;input type=\"text\"&gt;</td>
         </tr>
-
         <tr>
-
             <td>&lt;button&gt;</td>
-            <td>Clickable button</td>
+            <td>Button element</td>
             <td>&lt;button&gt;Click Me&lt;/button&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;br&gt;</td>
             <td>Line break</td>
-            <td>Line 1&lt;br&gt;Line 2</td>
+            <td>Text&lt;br&gt;New Line</td>
         </tr>
-
         <tr>
             <td>&lt;hr&gt;</td>
             <td>Horizontal line</td>
             <td>&lt;hr&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;strong&gt;, &lt;em&gt;</td>
             <td>Bold and italic text</td>
             <td>&lt;strong&gt;Bold&lt;/strong&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;div&gt;, &lt;span&gt;</td>
-            <td>Block and inline containers</td>
+            <td>Containers for layout and inline style</td>
             <td>&lt;div&gt;Block&lt;/div&gt;</td>
         </tr>
-
         <tr>
             <td>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;</td>
-            <td>Semantic structure elements</td>
+            <td>Semantic page layout</td>
             <td>&lt;main&gt;Content&lt;/main&gt;</td>
         </tr>
-
     </table>
 
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Carol Iantas. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

@@ -2,29 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Cheat Sheet Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="myscripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="myscripts.js" defer></script>
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Carol's Web</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="HTML.html">HTML</a></li>
+      <li><a href="Css.html">CSS</a></li>
+      <li><a href="JavaScript.html">JavaScript</a></li>
+      <li><a href="Hobby.html">Hobby</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div align="center">
-        <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXr</h1>
-        <nav>
-            <ul style="list-style-type:none">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="Css.html">CSS</a></li>
-                <li><a href="JavaScript.html">JavaScript</a></li>
-                <li><a href="Hobby.html">Hobby</a></li>
-            </ul>
+  <!-- Page Content -->
+  <h1>JavaScript Cheat Sheet</h1>
+  <p class="paragraphAboutMe">Here are 15 JavaScript concepts with examples to help you build dynamic and interactive
+    web apps!</p>
 
-        </nav>
-    </div>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Topic</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Variables</td>
+      <td>Store data</td>
+      <td>
+        <pre>let name = \"Carol\";</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Data Types</td>
+      <td>Different value types</td>
+      <td>
+        <pre>string, number, boolean</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Functions</td>
+      <td>Reusable code blocks</td>
+      <td>
+        <pre>function greet() { alert(\"Hi\"); }</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>If/Else</td>
+      <td>Conditional logic</td>
+      <td>
+        <pre>if (score > 50) {...}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Loops</td>
+      <td>Repeat actions</td>
+      <td>
+        <pre>for (let i = 0; i < 5; i++) {...}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Arrays</td>
+      <td>Store multiple items</td>
+      <td>
+        <pre>let fruits = [\"apple\"];</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Objects</td>
+      <td>Key-value pairs</td>
+      <td>
+        <pre>{name: \"Carol\", age: 25}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Events</td>
+      <td>User actions</td>
+      <td>
+        <pre>onclick=\"doSomething()\"</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>DOM</td>
+      <td>Interact with HTML</td>
+      <td>
+        <pre>document.getElementById(...)</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>console.log()</td>
+      <td>Debugging</td>
+      <td>
+        <pre>console.log(\"Hi\");</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td>Math operations</td>
+      <td>
+        <pre>Math.random();</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>String Methods</td>
+      <td>Work with text</td>
+      <td>
+        <pre>\"hello\".toUpperCase()</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Array Methods</td>
+      <td>Modify arrays</td>
+      <td>
+        <pre>fruits.push(\"banana\");</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>setTimeout</td>
+      <td>Delay code</td>
+      <td>
+        <pre>setTimeout(() => {}, 1000);</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Arrow Functions</td>
+      <td>Short functions</td>
+      <td>
+        <pre>const hi = () => {}</pre>
+      </td>
+    </tr>
+  </table>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Carol Iantas. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

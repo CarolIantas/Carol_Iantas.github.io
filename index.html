@@ -3,53 +3,55 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="myscripts.js"></script>
+  <script src="myscripts.js" defer></script>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Carol's Web</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="HTML.html">HTML</a></li>
+      <li><a href="Css.html">CSS</a></li>
+      <li><a href="JavaScript.html">JavaScript</a></li>
+      <li><a href="Hobby.html">Hobby</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div class="vertical-menu">
-    <nav>
-      <ul class="navBar1">
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="HTML.html">HTML</a></li>
-        <li><a href="Css.html">CSS</a></li>
-        <li><a href="JavaScript.html">JavaScript</a></li>
-        <li><a href="Hobby.html">Hobby</a></li>
-      </ul>
-    </nav>
-  </div>
-
+  <!-- Profile Image -->
   <div class="gallery">
-    <img src="images/carol.jpg" alt="This is Carol" />
+    <img src="images/carol.jpg" alt="This is Carol">
   </div>
 
+  <!-- About Me Section -->
   <div>
     <p class="paragraphAboutMe">
-      Hello My name is Carol, <br>
+      Hello, my name is Carol!<br><br>
 
-      I'm new to Software Development and currently learning C++, HTML, CSS and JavaScript.
-      Honestly, programming can be confusing frequently, but I'm working through it step by step.
-      I have fun problem-solving (when I know how to solve the problem!) and seeking to find ways
-      to learn and solve how things work in code.
+      I'm new to Software Development and currently learning C++, HTML, CSS, and JavaScript.
+      Honestly, programming can be confusing, but I'm working through it step by step.
+      I really enjoy problem-solving (especially when I finally get the answer 😄) and learning how things work in
+      code.<br><br>
 
-      <br>
+      Right now, my focus is building my programming logic and improving my skills.
+      I don't have much experience yet, but I'm excited to grow and keep learning!<br><br>
 
-      Right now, my focus is on building and solidifying my programming logic and improving my
-      skills as well. I don't have experience yet, but I'm excited to keep learning and increase my knowledge!
+      If you're also learning or have advice to share, let's connect!<br>
 
-      <br>
-
-      If you're also learning or have advice to share, let's connect! <br>
-      
       <span class="happyFace">₍^ >ヮ<^₎ .ᐟ.ᐟ</span>
-
     </p>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Carol Iantas. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

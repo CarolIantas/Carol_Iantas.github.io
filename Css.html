@@ -2,153 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Cheat Sheet Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="myscripts.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myscripts.js" defer></script>
 </head>
 
-<body class="cssCheatPage">
-    <title>CSS Cheat Sheet</title>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Carol's Web</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="Css.html">CSS</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="Hobby.html">Hobby</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div>
+    <!-- Page Content -->
+    <h1>CSS Cheat Sheet</h1>
+    <p class="paragraphAboutMe">This table lists 15 common and helpful CSS properties and features to help you style
+        your webpages beautifully.</p>
 
-        <nav>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Property / Feature</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Selectors</td>
+            <td>Target HTML elements</td>
+            <td>p, .class, #id</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>color</td>
+            <td>Text color</td>
+            <td>color: red;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>background</td>
+            <td>Background color/image</td>
+            <td>background: #eee;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>font-family</td>
+            <td>Text font</td>
+            <td>font-family: Arial;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>font-size</td>
+            <td>Text size</td>
+            <td>font-size: 16px;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>font-weight</td>
+            <td>Boldness</td>
+            <td>font-weight: bold;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>text-align</td>
+            <td>Text alignment</td>
+            <td>text-align: center;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>margin</td>
+            <td>Outer spacing</td>
+            <td>margin: 20px;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>padding</td>
+            <td>Inner spacing</td>
+            <td>padding: 10px;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>border</td>
+            <td>Border styling</td>
+            <td>border: 1px solid black;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>display</td>
+            <td>Element layout</td>
+            <td>display: flex;</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>flexbox</td>
+            <td>Flexible layouts</td>
+            <td>justify-content: space-between;</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>position</td>
+            <td>Element position</td>
+            <td>position: absolute;</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>animation / keyframes</td>
+            <td>Animations</td>
+            <td>@keyframes slidein { ... }</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>media queries</td>
+            <td>Responsive design</td>
+            <td>@media (max-width: 600px) { ... }</td>
+        </tr>
+    </table>
 
-            <ul style="list-style-type:none">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="Css.html">CSS</a></li>
-                <li><a href="JavaScript.html">JavaScript</a></li>
-                <li><a href="Hobby.html">Hobby</a></li>
-            </ul>
-
-        </nav>
-    </div>
-
-    </head>
-
-    <body>
-
-        <h1>CSS Cheat Sheet</h1>
-        <p>This table lists 15 useful CSS elements, properties, and functionalities.</p>
-
-        <table>
-            <tr>
-                <th>#</th>
-                <th>Property / Feature</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-
-            <tr>
-                <td>1</td>
-                <td>Selectors</td>
-                <td>Targets specific HTML elements</td>
-                <td>p, .class, #id</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>color</td>
-                <td>Sets the text color</td>
-                <td>color: red;</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>background</td>
-                <td>Sets background color or image</td>
-                <td>background: #eee;</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>font-family</td>
-                <td>Sets the font of the text</td>
-                <td>font-family: Arial;</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>font-size</td>
-                <td>Sets the size of the text</td>
-                <td>font-size: 16px;</td>
-            </tr>
-
-            <tr>
-                <td>6</td>
-                <td>font-weight</td>
-                <td>Defines boldness of text</td>
-                <td>font-weight: bold;</td>
-            </tr>
-
-            <tr>
-                <td>7</td>
-                <td>text-align</td>
-                <td>Aligns text left, center, or right</td>
-                <td>text-align: center;</td>
-            </tr>
-
-            <tr>
-                <td>8</td>
-                <td>margin</td>
-                <td>Space outside the element</td>
-                <td>margin: 20px;</td>
-            </tr>
-
-            <tr>
-                <td>9</td>
-                <td>padding</td>
-                <td>Space inside the element</td>
-                <td>padding: 10px;</td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td>border</td>
-                <td>Adds a border around an element</td>
-                <td>border: 1px solid black;</td>
-            </tr>
-
-            <tr>
-                <td>11</td>
-                <td>display</td>
-                <td>Defines how an element is displayed</td>
-                <td>display: flex;</td>
-            </tr>
-
-            <tr>
-                <td>12</td>
-                <td>flexbox</td>
-                <td>Flexible layout control</td>
-                <td>justify-content: space-between;</td>
-            </tr>
-
-            <tr>
-                <td>13</td>
-                <td>position</td>
-                <td>Controls positioning of elements</td>
-                <td>position: absolute;</td>
-            </tr>
-
-            <tr>
-                <td>14</td>
-                <td>animation / keyframes</td>
-                <td>Adds animations to elements</td>
-                <td>@keyframes slidein { ... }</td>
-            </tr>
-
-            <tr>
-                <td>15</td>
-                <td>media queries</td>
-                <td>Makes site responsive</td>
-                <td>@media (max-width: 600px) { ... }</td>
-            </tr>
-            
-        </table>
-
-    </body>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Carol Iantas. All rights reserved.</p>
+    </footer>
+</body>
 
 </html>
